@@ -1,6 +1,5 @@
 "use client";
 import styles from "./page.module.css";
-//import "./globals.css";
 import Footer from "./components/Footer";
 import 'aos/dist/aos.css';
 import Image from "next/image";
@@ -21,11 +20,11 @@ return(
         <h2 className={styles.heading}>
             All articles
         </h2>
-        <Image className={styles.img1} src="/images/picture.jpg" alt="im1" /*data-aos="fade-right"*/ width={100} height= {100}/>
-        <Image className={styles.img2} src="/images/bread.jpg" alt="im2" /*data-aos="fade-left"*/ width={100} height= {100} />
-        <Image className={styles.img3} src="/images/croissant.jpg" alt="m3" /*data-aos="fade-left"*/ width={100} height= {100}/>
+        <Image className={styles.img1} src="/images/picture.jpg" alt="im1" data-aos="fade-right" width={100} height= {100}/>
+        <Image className={styles.img2} src="/images/bread.jpg" alt="im2" data-aos="fade-left" width={100} height= {100} />
+        <Image className={styles.img3} src="/images/croissant.jpg" alt="m3" data-aos="fade-left" width={100} height= {100}/>
 
-        <div className={styles.recipe1} /*data-aos="fade-left"*/>
+        <div className={styles.recipe1} data-aos="fade-left">
             <button className={styles.bt1}>Recipe</button>
             <h2 className={styles.titolo1}>Pane Integrale</h2>
             <p className={styles.p1}>
@@ -35,7 +34,7 @@ Questo pane è noto per il suo sapore ricco e leggermente
 nocciolato, oltre che per la sua consistenza densa e 
 sostanziosa. </p>
         </div>
-        <div className={styles.recipe2} /*data-aos="fade-left"*/>
+        <div className={styles.recipe2} data-aos="fade-left">
             <button className={styles.bt2}>Recipe</button>
         <h2 className={styles.titolo2}>
             Il Corentto
@@ -47,7 +46,7 @@ Il cornetto è fatto di pasta sfoglia leggera e friabile, spesso arricchito
   da un caffè o un cappuccino.
             </p>
         </div>
-        <div className={styles.recipe3} /*data-aos="fade-right"*/>
+        <div className={styles.recipe3} data-aos="fade-right">
             <button className={styles.bt3}>Recipe</button>
         <h2 className={styles.titolo3}>
             Ciambella
@@ -60,10 +59,10 @@ Il cornetto è fatto di pasta sfoglia leggera e friabile, spesso arricchito
         </div>
 
     </section>
-    <section className={styles.section2}  /*data-aos="fade-up"*/>
+    <section className={styles.section2} >
         <h2 className={styles.t1}>Popular posts</h2>
         <div className={styles.container}>
-        <div className={styles.recipe6}  >
+        <div className={styles.recipe6} data-aos="fade-up" >
         <Image className={styles.img4} src="/images/pic1.jpg" alt=""  width={100} height= {100}/>
             <h2 className={styles.t2}>Planning Helps A Party Perfect Keep Dinner Simple Heat </h2>
             <p className={styles.p3}>
@@ -71,7 +70,7 @@ Il cornetto è fatto di pasta sfoglia leggera e friabile, spesso arricchito
                 will regularly find yourself in the market for different products to stock you commercial kitch.
             </p>
         </div>
-        <div className={styles.recipe4}>
+        <div className={styles.recipe4} data-aos="fade-up">
         <Image className={styles.img5} src="/images/pic2.jpg" alt="" width={100} height= {100}  />
             <h2 className={styles.t2}>Planning Helps A Party Perfect Keep Dinner Simple Heat </h2>
             <p className={styles.p3}>
@@ -79,7 +78,7 @@ Il cornetto è fatto di pasta sfoglia leggera e friabile, spesso arricchito
                 will regularly find yourself in the market for different products to stock you commercial kitch.
             </p>
         </div>
-        <div className={styles.recipe5}>
+        <div className={styles.recipe5} data-aos="fade-up">
         <Image className={styles.img6} src="/images/pic3.jpg" alt=""  width={100} height= {100}  />
             <h2 className={styles.t2}>Planning Helps A Party Perfect Keep Dinner Simple Heat </h2>
             <p className={styles.p3}>
