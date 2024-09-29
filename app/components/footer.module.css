@@ -1,0 +1,389 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+.footer{
+    bottom: 54rem;
+    position: relative;
+    height: 12rem;
+    width: 58rem;
+}
+.footer .imageContainer {
+    position: relative;
+    left: -19rem;
+    margin: 1rem;
+    display: inline-block;
+    border: 105px solid #ffe3e3;
+    width: 25rem;
+    height: 28rem;
+    bottom: 26rem;
+    border-radius: 2rem;
+}
+.footer .imageContainer img {
+    max-width: 25rem;
+    width: 19rem;
+    height: 22rem;
+    border: 47px solid #fff;
+}
+.footer .iconContainer {
+    position: relative;
+    left: 26rem;
+    height: 24rem;
+    display: grid;
+    grid-template-columns: repeat(3, 11rem);
+    grid-template-rows: repeat(2, 15rem);
+    top: 9rem;
+    background-color: transparent;
+    width: 33rem;
+
+}
+.footer .iconContainer img {
+    bottom: 3rem;
+    position: relative;
+    max-width: 12rem;
+    width: 8rem;
+    background-color: transparent;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+.footer .iconContainer img:hover {
+   transform: rotate(10deg);
+}
+.footer .iconContainer .iconTitolo {
+    position: absolute;
+    top: 6rem;
+    font-family: cursive;
+}
+.footer .iconContainer a::after {
+    display: none;
+}
+.footer .footerInfo {
+    width: 84rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 20rem;
+    background-color: var(--pinky);
+
+}
+.footer .footerInfo i {
+    color: var(--pink);
+}
+
+.footer .footerInfo .socialMedia a {
+    padding: 10px;
+    
+}
+.footer .footerInfo .socialMedia i {
+    font-size: 22px;    
+}
+/*
+@media (min-width: 375px){
+    .footer{
+        bottom: -9rem;
+    }
+.footer .imageContainer {
+width: 62px;
+bottom: 18rem;
+height: 3rem;
+left: -11px;
+    }
+.footer .imageContainer img {
+        width: 8rem;
+        height: 8rem;
+        max-width: 100rem;
+        border: 30px solid #fff;
+        position: relative;
+        left: -58px;
+        bottom: 67px;
+    }
+    .footer .iconContainer {
+        position: relative;
+        left: -1rem;
+        height: 20rem;
+        top: 18rem;
+        grid-template-columns: repeat(3, 6rem);
+        grid-template-rows: repeat(2, 9rem);
+    }
+    .footer .iconContainer img {
+        bottom: -2rem;
+        position: relative;
+        max-width: 12rem;
+        width: 3rem;
+    }
+    .footer .iconContainer a {
+        height: 4rem;
+        width: 4rem;
+    }
+    .footer .footerInfo {
+        right: 30rem;
+    }
+    .footer .footerInfo .p {
+        font-size: 12px;
+        position: relative;
+        right: 3rem;
+    }
+    .footer .socialMedia {
+        position: relative;
+        right: 3rem;
+    }
+    .footer .socialMedia a {
+        padding: 5px;
+    }
+    }
+    */
+@media (max-width: 428px){
+.footer{
+    bottom: -19rem;
+}
+.footer .imageContainer {
+    position: relative;
+    width: 10rem;
+    height: 9rem;
+    left: -10px;
+    bottom: 18rem;
+}
+.footer .imageContainer img {
+    width: 10rem;
+    height: 10rem;
+    max-width: 100%;
+    border: 38px solid #fff;
+    position: relative;
+    left: -37px;
+    bottom: 3rem;
+}
+.footer .iconContainer {
+    position: relative;
+    left: 2rem;
+    height: 20rem;
+    top: 25rem;
+    grid-template-columns: repeat(3, 7rem);
+    grid-template-rows: repeat(2, 10rem);
+    width: 22rem;
+}
+.footer .iconContainer img {
+    bottom: -2rem;
+    position: relative;
+    max-width: 12rem;
+    width: 3rem;
+}
+.footer .iconContainer a {
+    height: 4rem;
+    width: 4rem;
+}
+.footer .footerInfo {
+    right: 32rem;
+    top: 1rem;
+}
+.footer .footerInfo .p {
+    font-size: 15px;
+    right: 0rem;
+}
+.footer .footerInfo .socialMedia {
+    right: -1rem;
+}
+}
+/*
+
+@media (min-width: 768px){
+    .footer{
+        bottom: -47rem;
+    }
+    .footer .imageContainer {
+        position: relative;
+        left: -27px;
+        width: 8rem;
+        height: 8rem;
+        bottom: 35rem; 
+      
+    }
+    .footer .imageContainer img {
+        width: 13rem;
+        height: 11rem;
+        max-width: 200px;
+        border: 28px solid #fff;
+        position: relative;
+        left: -61px;
+        bottom: 3rem;
+    }
+    .footer .iconContainer {
+        position: relative;
+        left: 0rem;
+        height: 20rem;
+        top: 16rem;
+        grid-template-columns: repeat(3, 7rem);
+        grid-template-rows: repeat(2, 10rem);
+        width: 22rem;
+    }
+    .footer .iconContainer img {
+        bottom: -2rem;
+        position: relative;
+        max-width: 12rem;
+        width: 3rem;
+    }
+    .footer .iconContainer a {
+        height: 4rem;
+        width: 4rem;
+    }
+    .footer .footerInfo {
+        right: 30rem;
+    }
+    }
+
+@media (min-width: 1024px){
+    .footer{
+        bottom: 54rem;
+        position: relative;
+        height: 12rem;
+        width: 58rem;
+    }
+    .footer .imageContainer {
+        position: relative;
+        left: -19rem;
+        margin: 1rem;
+        display: inline-block;
+        border: 105px solid #ffe3e3;
+        width: 25rem;
+        height: 28rem;
+        bottom: 26rem;
+        border-radius: 2rem;
+    }
+    .footer .imageContainer img {
+        max-width: 25rem;
+        width: 19rem;
+        height: 22rem;
+        border: 47px solid #fff;
+    }
+    .footer .iconContainer {
+        position: relative;
+        left: 26rem;
+        height: 24rem;
+        display: grid;
+        grid-template-columns: repeat(3, 11rem);
+        grid-template-rows: repeat(2, 15rem);
+        top: 9rem;
+        background-color: transparent;
+        width: 33rem;
+    
+    }
+    .footer .iconContainer img {
+        bottom: 3rem;
+        position: relative;
+        max-width: 12rem;
+        width: 8rem;
+        background-color: transparent;
+        height: auto;
+        transition: transform 0.3s ease;
+    }
+    .footer .iconContainer img:hover {
+       transform: rotate(10deg);
+    }
+    .footer .iconContainer .iconTitolo {
+        position: absolute;
+        top: 6rem;
+        font-family: cursive;
+    }
+    .footer .iconContainer a::after {
+        display: none;
+    }
+    .footer .footerInfo {
+        width: 84rem;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: 20rem;
+        background-color: var(--pinky);
+    
+    }
+    .footer .footerInfo i {
+        color: var(--pink);
+    }
+    
+    .footer .footerInfo .socialMedia a {
+        padding: 10px;
+        
+    }
+    .footer .footerInfo .socialMedia i {
+        font-size: 22px;    
+    }
+        }
+@media(min-width:1144px){
+    
+.footer{
+    bottom: 54rem;
+    position: relative;
+    height: 12rem;
+    width: 58rem;
+}
+.footer .imageContainer {
+    position: relative;
+    left: -19rem;
+    margin: 1rem;
+    display: inline-block;
+    border: 105px solid #ffe3e3;
+    width: 25rem;
+    height: 28rem;
+    bottom: 26rem;
+    border-radius: 2rem;
+}
+.footer .imageContainer img {
+    max-width: 25rem;
+    width: 19rem;
+    height: 22rem;
+    border: 47px solid #fff;
+}
+.footer .iconContainer {
+    position: relative;
+    left: 26rem;
+    height: 24rem;
+    display: grid;
+    grid-template-columns: repeat(3, 11rem);
+    grid-template-rows: repeat(2, 15rem);
+    top: 9rem;
+    background-color: transparent;
+    width: 33rem;
+
+}
+.footer .iconContainer img {
+    bottom: 3rem;
+    position: relative;
+    max-width: 12rem;
+    width: 8rem;
+    background-color: transparent;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+.footer .iconContainer img:hover {
+   transform: rotate(10deg);
+}
+.footer .iconContainer .iconTitolo {
+    position: absolute;
+    top: 6rem;
+    font-family: cursive;
+}
+.footer .iconContainer a::after {
+    display: none;
+}
+.footer .footerInfo {
+    width: 84rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 20rem;
+    background-color: var(--pinky);
+
+}
+.footer .footerInfo i {
+    color: var(--pink);
+}
+
+.footer .footerInfo .socialMedia a {
+    padding: 10px;
+    
+}
+.footer .footerInfo .socialMedia i {
+    font-size: 22px;    
+}
+}
+*/

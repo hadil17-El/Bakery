@@ -1,0 +1,339 @@
+.section{
+    position: relative;
+    right: 5rem;
+    top: 3rem;
+    height: 20rem;
+}
+.form {
+    margin: 1rem;
+    height: 20rem;
+    width: 45rem;
+}
+.form input {
+    display: flex;
+    width: 20rem;
+    height: 3rem;
+    border-radius: 1rem;
+    border: 2px solid var(--pinky);
+    margin-bottom: 1rem;
+    background-color: transparent;
+}
+.form input::placeholder {
+    position: relative;
+    left: 1rem;
+    font-family: cursive;
+}
+
+.form label {
+    width: 18rem;
+    height: 2rem;
+    color: var(--pinky);
+    display: flex;
+    position: relative;
+    bottom: 17rem;
+    left: 25rem;
+    font-family: cursive;
+}
+.form .select {
+    position: relative;
+    left: 2rem;
+    width: 11rem;
+    height: 3rem;
+    border-radius: 1rem;
+    font-family: cursive;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid var(--pinky);
+}
+.btn {
+    position: relative;
+    right: -20rem;
+    height: 3rem;
+    width: 8rem;
+    border-radius: 1rem;
+    border: 2px solid var(--pinky);
+    background-color: transparent;
+    cursor: pointer;
+    top: -1rem;
+    font-family: cursive;
+    transition: background-color 0.5s ease;
+}
+.btn:hover {
+    background-color: var(--pinky);
+}
+.btn2 {
+    position: relative;
+    right: 19rem;
+    height: 3rem;
+    width: 8rem;
+    border-radius: 1rem;
+    border: 2px solid var(--pinky);
+    background-color: transparent;
+    cursor: pointer;
+    top: -1rem;
+    font-family: cursive;
+    transition: background-color 0.5s ease;
+}
+.btn2:hover {
+    background-color: var(--pinky);
+}
+/*
+@media(min-width: 375px) {
+    .section {
+        display: flex;
+        height: 33rem;
+    }
+    .form {
+        position: relative;
+        left: 6rem;    
+    }
+    .form input {
+        width: 12rem;
+    }
+    .form .label {
+        left: -1rem;
+        bottom: -2rem;
+    }
+    .form .select {
+        left: -2rem;
+    }
+    .btn {
+        position: relative;
+        right: 2rem;
+    }
+    .btn,.btn2 {
+        width: 7rem;
+        font-size: 13px;
+        position: relative;
+        top: 9rem;
+    }
+    .btn2 {
+        right: -5px;
+    }
+
+}
+*/
+@media(max-width: 428px) {
+    .section {
+        display: flex;
+        height: 33rem;
+    }
+    .form {
+        position: relative;
+        left: 6rem;    
+    }
+    .form input {
+        width: 14rem;
+    }
+    .btn {
+        position: relative;
+        right: 2rem;
+    }
+    .btn,.btn2 {
+        width: 7rem;
+        font-size: 15px;
+        position: relative;
+        top: 9rem;
+    }
+    .btn2 {
+        right: -2rem;
+        top: 131px;
+        }
+    .form label {
+        position: relative;
+        bottom: -2rem;
+        left: -3rem;
+    }
+    .form .select {
+        left: 1rem;
+    }
+}
+/*
+@media(min-width: 768px) {
+    .section {
+        position: relative;
+        right: 4rem;
+        top: 3rem;
+        height: 20rem;
+    }
+    .btn , .btn2 {
+        width: 9rem;
+        font-size: 16px;
+        position: relative;
+        top: 6rem;
+    }
+    .form .input {
+        width: 19rem;
+        position: relative;
+        left: 2rem;
+        height: 4rem;
+        font-size: 1rem;
+    }
+    .form .select {
+        left: 4rem;
+        width: 15rem;
+        font-size: 1rem;
+    }
+
+}
+@media(min-width: 1024px) {
+    .section{
+        position: relative;
+        right: 5rem;
+        top: 3rem;
+        height: 20rem;
+    }
+    .form {
+        margin: 1rem;
+        height: 20rem;
+        width: 45rem;
+    }
+    .form input {
+        display: flex;
+        width: 20rem;
+        height: 3rem;
+        border-radius: 1rem;
+        border: 2px solid var(--pinky);
+        margin-bottom: 1rem;
+        background-color: transparent;
+    }
+    .form input::placeholder {
+        position: relative;
+        left: 1rem;
+        font-family: cursive;
+    }
+    
+    .form label {
+        width: 18rem;
+        height: 2rem;
+        color: var(--pinky);
+        display: flex;
+        position: relative;
+        bottom: 17rem;
+        left: 25rem;
+        font-family: cursive;
+    }
+    .form .select {
+        position: relative;
+        left: 2rem;
+        width: 11rem;
+        height: 3rem;
+        border-radius: 1rem;
+        font-family: cursive;
+        cursor: pointer;
+        background-color: transparent;
+        border: 1px solid var(--pinky);
+    }
+    .btn {
+        position: relative;
+        right: -20rem;
+        height: 3rem;
+        width: 8rem;
+        border-radius: 1rem;
+        border: 2px solid var(--pinky);
+        background-color: transparent;
+        cursor: pointer;
+        top: -1rem;
+        font-family: cursive;
+        transition: background-color 0.5s ease;
+    }
+    .btn:hover {
+        background-color: var(--pinky);
+    }
+    .btn2 {
+        position: relative;
+        right: 19rem;
+        height: 3rem;
+        width: 8rem;
+        border-radius: 1rem;
+        border: 2px solid var(--pinky);
+        background-color: transparent;
+        cursor: pointer;
+        top: -1rem;
+        font-family: cursive;
+        transition: background-color 0.5s ease;
+    }
+
+}
+@media(min-width:1144px){
+    .section{
+        position: relative;
+        right: 5rem;
+        top: 3rem;
+        height: 20rem;
+    }
+    .form {
+        margin: 1rem;
+        height: 20rem;
+        width: 45rem;
+    }
+    .form input {
+        display: flex;
+        width: 20rem;
+        height: 3rem;
+        border-radius: 1rem;
+        border: 2px solid var(--pinky);
+        margin-bottom: 1rem;
+        background-color: transparent;
+    }
+    .form input::placeholder {
+        position: relative;
+        left: 1rem;
+        font-family: cursive;
+    }
+    
+    .form label {
+        width: 18rem;
+        height: 2rem;
+        color: var(--pinky);
+        display: flex;
+        position: relative;
+        bottom: 17rem;
+        left: 25rem;
+        font-family: cursive;
+    }
+    .form .select {
+        position: relative;
+        left: 2rem;
+        width: 11rem;
+        height: 3rem;
+        border-radius: 1rem;
+        font-family: cursive;
+        cursor: pointer;
+        background-color: transparent;
+        border: 1px solid var(--pinky);
+    }
+    .btn {
+        position: relative;
+        right: -20rem;
+        height: 3rem;
+        width: 8rem;
+        border-radius: 1rem;
+        border: 2px solid var(--pinky);
+        background-color: transparent;
+        cursor: pointer;
+        top: -1rem;
+        font-family: cursive;
+        transition: background-color 0.5s ease;
+    }
+    .btn:hover {
+        background-color: var(--pinky);
+    }
+    .btn2 {
+        position: relative;
+        right: 19rem;
+        height: 3rem;
+        width: 8rem;
+        border-radius: 1rem;
+        border: 2px solid var(--pinky);
+        background-color: transparent;
+        cursor: pointer;
+        top: -1rem;
+        font-family: cursive;
+        transition: background-color 0.5s ease;
+    }
+    .btn2:hover {
+        background-color: var(--pinky);
+    }
+}
+*/

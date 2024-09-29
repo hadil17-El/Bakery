@@ -1,0 +1,1028 @@
+.section {
+    background: var(--baby-sky);
+    width: 76rem;
+    height: 83rem;
+    border-radius: 4rem;
+    box-sizing: border-box;
+    position: relative;
+    right: 18rem;
+    top: 3rem;
+}
+.h3 {
+    font-family: cursive;
+    font-size: 2rem;
+    position: relative;
+    left: 4rem;
+    top: 2rem;
+    margin: 0;
+    cursor: pointer;
+    width: 7rem;
+}
+.h3::after {
+    content: '';
+    width: 36%;
+    height: 2px;
+    display: flex;
+    transition: width .5s ease;
+    background-color: var(--pinky);
+}
+.h3:hover::after {
+    width: 75%;
+}
+.img1{
+    width: 7rem;
+    max-width: 10rem;
+    height: 10rem;
+    cursor: pointer;
+    position: relative;
+    border-bottom-left-radius: 4rem;
+    border-top-right-radius: 4rem;
+    left: 54rem;
+    transition: border-radius .5s ease;
+}
+.img2{
+    width: 7rem;
+    max-width: 10rem;
+    height: 8rem;
+    left: 982px;
+    border-bottom-right-radius: 4rem;
+    border-top-left-radius: 4rem;
+    position: relative;
+    cursor: pointer;
+    bottom: 644px;
+    transition: border-radius .5s ease;
+}
+.img3{
+    width: 7rem;
+    max-width: 10rem;
+    height: 10rem;
+    position: relative;
+    left: 61rem;
+    bottom: 72rem;
+    cursor: pointer;
+    border-bottom-left-radius: 4rem;
+    border-top-right-radius: 4rem;
+    transition: border-radius .5s ease;
+}
+.img4{
+    width: 7rem;
+    max-width: 10rem;
+    height: 8rem;
+    left: 858px;
+    border-bottom-right-radius: 4rem;
+    border-top-left-radius: 4rem;
+    position: relative;
+    bottom: 1829px;
+    cursor: pointer;
+    transition: border-radius .5s ease;
+}
+.img1:hover,
+.img2:hover,
+.img3:hover,
+.img4:hover {
+    border-radius: 20px;
+}
+.ingredients, .nutritionalInfo{
+    display: grid;
+    position: relative;
+    bottom: 36rem;
+    left: 18rem;
+    height: 15rem;
+    width: 13rem;
+    border-radius: 8px;
+}
+.nutritionalInfo {
+    left: 27rem;
+    bottom: 51rem;
+    height: 17rem;
+    width: 15rem;
+}
+.span1 , .span2 {
+    display: flex;
+    height: 19px;
+    font-size: 20px;
+    font-family: cursive;
+    align-items: center;
+    color: var(--pinky);
+    position: relative;
+    left: 5rem;
+}
+.span2 {
+    left: 7rem;
+}
+.ul1 {
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    font-size: 14px;
+    color: var(--black);
+    width: 7rem;
+    position: relative;
+    left: 4rem;
+    bottom: 1rem;
+}
+.nutritionalInfo .ul1 {
+    bottom: -18px;
+    left: 8rem;
+}
+.ul1 li {
+    position: relative;
+    left: 1rem;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+.bread {
+    display: block;
+    width: 50rem;
+    height: 16rem;
+}
+.bread .img2 {
+    bottom: 132px;
+}
+.bread .img3 {
+    bottom: 121px;
+    left: 982px;
+}
+.bread .img4 {
+    bottom: 287px;
+    left: 54rem;
+}
+.croissant {
+    position: relative;
+    top: 11rem;
+    height: 27rem;
+}
+.croissant .h3 {
+    position: relative;
+    left: 58rem;
+    top: -2rem;
+}
+.croissant .nutritionalInfo {
+    left: 32rem; 
+}
+.croissant .ingredients {
+    left: 24rem;
+}
+.croissant .img1 {
+    left: 3rem;
+    position: relative;
+}
+.croissant .img2 {
+    left: 47px;
+    position: relative;
+    top: 5px;
+}
+.croissant .img3 {
+    left: 167px;
+    position: relative;
+    top: -8rem;
+}
+.croissant .img4 {
+    left: 168px;
+    position: relative;
+    top: -27rem;
+}
+.croissant .ul1 {
+    top: 1rem;
+}
+.muffin {
+    position: relative;
+    top: 11rem;
+}
+.muffin .img1 {
+    left: 64rem;
+    position: relative;
+    top: 6rem;
+}
+.muffin .img2 {
+    left: 905px;
+    position: relative;
+    top: -4rem;
+}
+.muffin .img3 {
+    left: 910px;
+    position: relative;
+    top: -23rem;
+}
+.muffin .img4 {
+    left: 1028px;
+    position: relative;
+    top: -32rem;
+}
+.muffin .ul1 {
+    bottom: -1rem;
+}
+/*
+@media(min-width: 375px) {
+    .section {
+        height: 153rem;
+        width: 283px;
+        position: relative;
+        left: -17px;
+    }
+    .nutritionalInfo .nutritionalItem {
+        position: relative;
+        left: -2rem;
+        font-size: 13px;
+        width: 9rem;
+        bottom: 2rem;
+    }
+   .ingredients .ingredientItem {
+    position: relative;
+    left: -1rem;
+    font-size: 13px;
+    width: 9rem;
+    bottom: -1rem;
+   }
+    .bread .h3 {
+        left: 3rem;
+        top: 1rem;    
+    }
+    .bread .img1 {
+        left: 3rem;
+        top: 3rem;    
+    }
+    .bread .img2 {
+        left: 162px;
+        top: -84px;
+    }
+    .bread .img3 {
+        bottom: 5rem;
+        left: 163px;
+    }
+    .bread .img4 {
+        left: 3rem;
+        top: -243px;
+    }
+    .bread .ingredients {
+        bottom: 11rem;
+        left: -4rem;
+    }
+    .bread .nutritionalInfo {
+        left: 2rem;
+        bottom: 26rem;
+        width: 13rem;
+    }
+    .croissant {
+        top: 38rem;
+    }
+    .croissant .h3 {
+        left: 7rem;
+    }
+
+    .croissant .img1 {
+        left: 1rem;
+        top: 3rem;    
+    }
+    .croissant .img2 {
+        left: 134px;
+        top: -84px;
+    }
+    .croissant .img3 {
+        top: -78px;
+        left: 134px;
+    }
+    .croissant .img4 {
+        left: 1rem;
+        top: -243px;
+    }
+    .croissant .ingredients {
+        left: -4rem;
+        top: -11rem;
+    }
+    .croissant .nutritionalInfo {
+        left: 2rem;
+        bottom: 25rem;
+    }
+    .croissant .nutritionalInfo .span2 {
+        left: 7rem;
+        width: 1rem;
+    }
+    .muffin {
+        top: 56rem;
+    }
+    .muffin .h3 {
+        left: 2rem;
+        top: 5rem;
+    }
+    .muffin .img1{
+        left: 2rem;
+        position: relative;
+        top: 7rem;
+    }
+    .muffin .img2{
+        left: 150px;
+        position: relative;
+        top: -21px;
+    }
+    .muffin .img3{
+        left: 150px;
+        position: relative;
+        top: -1rem;
+    }
+    .muffin .img4{
+        left: 2rem;
+        position: relative;
+        top: -179px;
+    }
+    .muffin .ingredients {
+        bottom: 7rem;
+        left: -4rem;
+    }
+    .muffin .span2 {
+        width: 1rem;
+    }
+    .muffin .nutritionalInfo {
+        left: 2rem;
+        bottom: 21rem;
+    }
+}*/
+@media(max-width: 428px) {
+    .section {
+        height: 153rem;
+        width: 22rem;
+        position: relative;
+        left: 14px ;
+    }
+    .bread .h3 {
+        left: 3rem;
+        top: 1rem;    
+    }
+    .bread .img1 {
+        left: 5rem;
+        top: 47px;    
+    }
+    .bread .img2 {
+        left: 198px;
+        top: -84px;
+    }
+    .bread .img3 {
+        bottom: 84px;
+        left: 198px;
+    }
+    .bread .img4 {
+        left: 5rem;
+        top: -249px;
+    }
+    .bread .ingredients {
+    bottom: 12rem;
+    left: -4rem;
+    }
+    .bread .nutritionalInfo {
+        left: 5rem;
+        top: -27rem;
+    } 
+    .bread .nutritionalInfo .span2 {
+        left: 7rem;
+        top: 1rem;
+        width: 1rem;
+    }
+    .ingredients .ingredientItem {
+        font-size: 1rem;
+    }
+    .nutritionalInfo .nutritionalItem{
+        left: -1rem;
+        bottom: -13px;
+        font-size: 1rem;
+    }
+    .croissant {
+        top: 38rem;
+    }
+    .croissant .h3 {
+        left: 11rem;
+    }
+    .croissant .nutritionalInfo .span2 {
+        left: 7rem;
+        top: 1rem;
+        width: 1rem;
+    }
+    .croissant .img1 {
+        left: 5rem;
+    position: relative;
+    top: 3rem;
+    }
+    .croissant .img2 {
+        left: 198px;
+        position: relative;
+        top: -84px;    
+    }
+    .croissant .img3 {
+        left: 198px;
+        position: relative;
+        top: -5rem;
+    }
+    .croissant .img4 {
+        left: 5rem;
+        position: relative;
+        top: -243px;
+    }
+    .croissant .ingredients {
+        left: -4rem;
+        top: -12rem;
+    }
+    .croissant .nutritionalInfo {
+        left: 5rem;
+        bottom: 27rem;
+    }
+    .muffin {
+        top: 56rem;
+    }
+ 
+    .muffin .nutritionalInfo .span2 {
+        left: 7rem;
+        top: 1rem;
+        width: 1rem;
+    }
+
+    .muffin .h3 {
+        left: 3rem;
+        top: 5rem;
+    }
+    .muffin .img1{
+        left: 5rem;
+        position: relative;
+        top: 7rem;
+    }
+    .muffin .img2{
+        left: 198px;
+        position: relative;
+        top: -21px;
+    }
+    .muffin .img3{
+        left: 198px;
+        position: relative;
+        top: -1rem;
+    }
+    .muffin .img4{
+        left: 5rem;
+        position: relative;
+        top: -179px;
+    }
+    .muffin .ingredients {
+        bottom: 8rem;
+        left: -4rem;
+    }
+    .muffin .nutritionalInfo {
+        left: 5rem;
+        bottom: 23rem;
+    }
+}
+/*
+@media(min-width: 768px) {
+    .section {
+        height: 144rem;
+        width: 413px;
+        position: relative;
+        left: -14px;
+        top: 11rem;
+    }
+    .bread .h3 {
+        left: 3rem;
+        top: 1rem;    
+    }
+    .bread .img1 {
+        left: 7rem;
+        top: 3rem;    
+    }
+    .bread .img2 {
+        left: 230px;
+        top: -84px;
+    }
+    .bread .img3 {
+        bottom: 5rem;
+        left: 230px;
+    }
+    .bread .img4 {
+        left: 7rem;
+        top: -244px;
+    }
+    .bread .ingredients {
+        bottom: 12rem;
+        left: -3rem;
+    }
+    .bread     .nutritionalInfo {
+        left: 7rem;
+        bottom: 26rem;
+        width: 13rem;
+    }
+    .croissant {
+        top: 35rem;
+    }
+    .croissant .img1 {
+        left: 5rem;
+    position: relative;
+    top: 3rem;
+    }
+    .croissant .img2 {
+        left: 198px;
+        position: relative;
+        top: -84px;    
+    }
+    .croissant .img3 {
+        left: 198px;
+        position: relative;
+        top: -5rem;
+    }
+    .croissant .img4 {
+        left: 5rem;
+        position: relative;
+        top: -243px;
+    }
+    .croissant .h3 {
+        left: 13rem;
+        top: 1rem;
+    }
+    .croissant .ingredients {
+        left: -2rem;
+        top: -13rem;
+    }
+    .croissant .nutritionalInfo {
+        left: 7rem;
+        bottom: 27rem;
+    }
+
+    .muffin {
+        top: 57rem;
+    }
+    .ingredients .ingredientItem {
+        font-size: 1rem;
+        left: 1rem;
+        bottom: -2rem;
+    }
+
+    .nutritionalInfo .nutritionalItem {
+        position: relative;
+        left: -2rem;
+        font-size: 1rem;
+        width: 9rem;
+        bottom: 1rem;
+    }
+    .muffin .h3 {
+        left: 3rem;
+        top: 2rem;
+    }
+    .muffin .img1 {
+        left: 5rem;
+    position: relative;
+    top: 3rem;
+    }
+    .muffin .img2 {
+        left: 198px;
+        position: relative;
+        top: -84px;    
+    }
+    .muffin .img3 {
+        left: 198px;
+        position: relative;
+        top: -5rem;
+    }
+    .muffin .img4 {
+        left: 5rem;
+        position: relative;
+        top: -243px;
+    }
+    .muffin .ingredients {
+        bottom: 12rem;
+        left: -3rem;
+    }
+    .muffin .nutritionalInfo {
+        left: 7rem;
+        bottom: 26rem;
+    }
+}
+@media(min-width: 1024px) {
+    .section {
+        background: var(--baby-sky);
+        width: 76rem;
+        height: 83rem;
+        border-radius: 4rem;
+        box-sizing: border-box;
+        position: relative;
+        right: 18rem;
+        top: 3rem;
+    }
+    .h3 {
+        font-family: cursive;
+        font-size: 2rem;
+        position: relative;
+        left: 4rem;
+        top: 2rem;
+        margin: 0;
+        cursor: pointer;
+        width: 7rem;
+    }
+    .h3::after {
+        content: '';
+        width: 36%;
+        height: 2px;
+        display: flex;
+        transition: width .5s ease;
+        background-color: var(--pinky);
+    }
+    .h3:hover::after {
+        width: 75%;
+    }
+    .img1{
+        width: 7rem;
+        max-width: 10rem;
+        height: 10rem;
+        cursor: pointer;
+        position: relative;
+        border-bottom-left-radius: 4rem;
+        border-top-right-radius: 4rem;
+        left: 54rem;
+        transition: border-radius .5s ease;
+    }
+    .img2{
+        width: 7rem;
+        max-width: 10rem;
+        height: 8rem;
+        left: 982px;
+        border-bottom-right-radius: 4rem;
+        border-top-left-radius: 4rem;
+        position: relative;
+        cursor: pointer;
+        bottom: 644px;
+        transition: border-radius .5s ease;
+    }
+    .img3{
+        width: 7rem;
+        max-width: 10rem;
+        height: 10rem;
+        position: relative;
+        left: 61rem;
+        bottom: 72rem;
+        cursor: pointer;
+        border-bottom-left-radius: 4rem;
+        border-top-right-radius: 4rem;
+        transition: border-radius .5s ease;
+    }
+    .img4{
+        width: 7rem;
+        max-width: 10rem;
+        height: 8rem;
+        left: 858px;
+        border-bottom-right-radius: 4rem;
+        border-top-left-radius: 4rem;
+        position: relative;
+        bottom: 1829px;
+        cursor: pointer;
+        transition: border-radius .5s ease;
+    }
+    .img1:hover,
+    .img2:hover,
+    .img3:hover,
+    .img4:hover {
+        border-radius: 20px;
+    }
+    .ingredients, .nutritionalInfo{
+        display: grid;
+        position: relative;
+        bottom: 36rem;
+        left: 18rem;
+        height: 15rem;
+        width: 13rem;
+        border-radius: 8px;
+    }
+    .nutritionalInfo {
+        left: 27rem;
+        bottom: 51rem;
+        height: 17rem;
+        width: 15rem;
+    }
+    .span1 , .span2 {
+        display: flex;
+        height: 19px;
+        font-size: 20px;
+        font-family: cursive;
+        align-items: center;
+        color: var(--pinky);
+        position: relative;
+        left: 5rem;
+    }
+    .span2 {
+        left: 7rem;
+    }
+    .ul1 {
+        font-family: cursive;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        font-size: 14px;
+        color: var(--black);
+        width: 7rem;
+        position: relative;
+        left: 4rem;
+        bottom: 1rem;
+    }
+    .nutritionalInfo .ul1 {
+        bottom: -18px;
+        left: 8rem;
+    }
+    .ul1 li {
+        position: relative;
+        left: 1rem;
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    .bread {
+        display: block;
+        width: 50rem;
+        height: 16rem;
+    }
+    .bread .img2 {
+        bottom: 132px;
+    }
+    .bread .img3 {
+        bottom: 121px;
+        left: 982px;
+    }
+    .bread .img4 {
+        bottom: 287px;
+        left: 54rem;
+    }
+    .croissant {
+        position: relative;
+        top: 11rem;
+        height: 27rem;
+    }
+    .croissant .h3 {
+        position: relative;
+        left: 58rem;
+        top: -2rem;
+    }
+    .croissant .nutritionalInfo {
+        left: 32rem; 
+    }
+    .croissant .ingredients {
+        left: 24rem;
+    }
+    .croissant .img1 {
+        left: 3rem;
+        position: relative;
+    }
+    .croissant .img2 {
+        left: 47px;
+        position: relative;
+        top: 5px;
+    }
+    .croissant .img3 {
+        left: 167px;
+        position: relative;
+        top: -8rem;
+    }
+    .croissant .img4 {
+        left: 168px;
+        position: relative;
+        top: -27rem;
+    }
+    .croissant .ul1 {
+        top: 1rem;
+    }
+    .muffin {
+        position: relative;
+        top: 11rem;
+    }
+    .muffin .img1 {
+        left: 64rem;
+        position: relative;
+        top: 6rem;
+    }
+    .muffin .img2 {
+        left: 905px;
+        position: relative;
+        top: -4rem;
+    }
+    .muffin .img3 {
+        left: 910px;
+        position: relative;
+        top: -23rem;
+    }
+    .muffin .img4 {
+        left: 1028px;
+        position: relative;
+        top: -32rem;
+    }
+    .muffin .ul1 {
+        bottom: -1rem;
+    }
+}
+@media(min-width:114px){
+    .section {
+        background: var(--baby-sky);
+        width: 76rem;
+        height: 83rem;
+        border-radius: 4rem;
+        box-sizing: border-box;
+        position: relative;
+        right: 18rem;
+        top: 3rem;
+    }
+    .h3 {
+        font-family: cursive;
+        font-size: 2rem;
+        position: relative;
+        left: 4rem;
+        top: 2rem;
+        margin: 0;
+        cursor: pointer;
+        width: 7rem;
+    }
+    .h3::after {
+        content: '';
+        width: 36%;
+        height: 2px;
+        display: flex;
+        transition: width .5s ease;
+        background-color: var(--pinky);
+    }
+    .h3:hover::after {
+        width: 75%;
+    }
+    .img1{
+        width: 7rem;
+        max-width: 10rem;
+        height: 10rem;
+        cursor: pointer;
+        position: relative;
+        border-bottom-left-radius: 4rem;
+        border-top-right-radius: 4rem;
+        left: 54rem;
+        transition: border-radius .5s ease;
+    }
+    .img2{
+        width: 7rem;
+        max-width: 10rem;
+        height: 8rem;
+        left: 982px;
+        border-bottom-right-radius: 4rem;
+        border-top-left-radius: 4rem;
+        position: relative;
+        cursor: pointer;
+        bottom: 644px;
+        transition: border-radius .5s ease;
+    }
+    .img3{
+        width: 7rem;
+        max-width: 10rem;
+        height: 10rem;
+        position: relative;
+        left: 61rem;
+        bottom: 72rem;
+        cursor: pointer;
+        border-bottom-left-radius: 4rem;
+        border-top-right-radius: 4rem;
+        transition: border-radius .5s ease;
+    }
+    .img4{
+        width: 7rem;
+        max-width: 10rem;
+        height: 8rem;
+        left: 858px;
+        border-bottom-right-radius: 4rem;
+        border-top-left-radius: 4rem;
+        position: relative;
+        bottom: 1829px;
+        cursor: pointer;
+        transition: border-radius .5s ease;
+    }
+    .img1:hover,
+    .img2:hover,
+    .img3:hover,
+    .img4:hover {
+        border-radius: 20px;
+    }
+    .ingredients, .nutritionalInfo{
+        display: grid;
+        position: relative;
+        bottom: 36rem;
+        left: 18rem;
+        height: 15rem;
+        width: 13rem;
+        border-radius: 8px;
+    }
+    .nutritionalInfo {
+        left: 27rem;
+        bottom: 51rem;
+        height: 17rem;
+        width: 15rem;
+    }
+    .span1 , .span2 {
+        display: flex;
+        height: 19px;
+        font-size: 20px;
+        font-family: cursive;
+        align-items: center;
+        color: var(--pinky);
+        position: relative;
+        left: 5rem;
+    }
+    .span2 {
+        left: 7rem;
+    }
+    .ul1 {
+        font-family: cursive;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        font-size: 14px;
+        color: var(--black);
+        width: 7rem;
+        position: relative;
+        left: 4rem;
+        bottom: 1rem;
+    }
+    .nutritionalInfo .ul1 {
+        bottom: -18px;
+        left: 8rem;
+    }
+    .ul1 li {
+        position: relative;
+        left: 1rem;
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    .bread {
+        display: block;
+        width: 50rem;
+        height: 16rem;
+    }
+    .bread .img2 {
+        bottom: 132px;
+    }
+    .bread .img3 {
+        bottom: 121px;
+        left: 982px;
+    }
+    .bread .img4 {
+        bottom: 287px;
+        left: 54rem;
+    }
+    .croissant {
+        position: relative;
+        top: 11rem;
+        height: 27rem;
+    }
+    .croissant .h3 {
+        position: relative;
+        left: 58rem;
+        top: -2rem;
+    }
+    .croissant .nutritionalInfo {
+        left: 32rem; 
+    }
+    .croissant .ingredients {
+        left: 24rem;
+    }
+    .croissant .img1 {
+        left: 3rem;
+        position: relative;
+    }
+    .croissant .img2 {
+        left: 47px;
+        position: relative;
+        top: 5px;
+    }
+    .croissant .img3 {
+        left: 167px;
+        position: relative;
+        top: -8rem;
+    }
+    .croissant .img4 {
+        left: 168px;
+        position: relative;
+        top: -27rem;
+    }
+    .croissant .ul1 {
+        top: 1rem;
+    }
+    .muffin {
+        position: relative;
+        top: 11rem;
+    }
+    .muffin .img1 {
+        left: 64rem;
+        position: relative;
+        top: 6rem;
+    }
+    .muffin .img2 {
+        left: 905px;
+        position: relative;
+        top: -4rem;
+    }
+    .muffin .img3 {
+        left: 910px;
+        position: relative;
+        top: -23rem;
+    }
+    .muffin .img4 {
+        left: 1028px;
+        position: relative;
+        top: -32rem;
+    }
+    .muffin .ul1 {
+        bottom: -1rem;
+    }
+}
+*/

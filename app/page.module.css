@@ -1,230 +1,1142 @@
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
-}
-
-.description {
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
-  font-size: 0.85rem;
-  max-width: var(--max-width);
-  width: 100%;
-  z-index: 2;
-  font-family: var(--font-mono);
-}
-
-.description a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.description p {
+.section1 {
   position: relative;
-  margin: 0;
-  padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
-  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-  border-radius: var(--border-radius);
-}
-
-.code {
-  font-weight: 700;
-  font-family: var(--font-mono);
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
-  max-width: 100%;
-  width: var(--max-width);
-}
-
-.card {
-  padding: 1rem 1.2rem;
-  border-radius: var(--border-radius);
-  background: rgba(var(--card-rgb), 0);
-  border: 1px solid rgba(var(--card-border-rgb), 0);
-  transition: background 200ms, border 200ms;
-}
-
-.card span {
-  display: inline-block;
-  transition: transform 200ms;
-}
-
-.card h2 {
-  font-weight: 600;
-  margin-bottom: 0.7rem;
-}
-
-.card p {
-  margin: 0;
-  opacity: 0.6;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  max-width: 30ch;
-  text-wrap: balance;
-}
-
-.center {
-  display: flex;
+  text-align: center;
+  left: 5rem;
+  display: contents;
   justify-content: center;
+  top: 1rem;
   align-items: center;
-  position: relative;
-  padding: 4rem 0;
 }
-
-.center::before {
-  background: var(--secondary-glow);
-  border-radius: 50%;
-  width: 480px;
-  height: 360px;
-  margin-left: -400px;
-}
-
-.center::after {
-  background: var(--primary-glow);
-  width: 240px;
-  height: 180px;
-  z-index: -1;
-}
-
-.center::before,
-.center::after {
-  content: "";
-  left: 50%;
+.heading {
+  width: 23%;
+  color: var(--pinky);
+  cursor: pointer;
   position: absolute;
-  filter: blur(45px);
-  transform: translateZ(0);
+  top: 5rem;
+  font-family: math;
+  left: 24rem;
 }
-
-.logo {
+.heading::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: var(--pinky);
+  position: absolute;
+  transition: width .5s ease;
+  left: -7px;
+  top: 2rem;
+  margin: 36px;
+}
+.heading:hover::after {
+  width: 0%;
+}
+.img1 {
   position: relative;
+  top: 132px;
+  width: 27rem;
+  left: -12rem;
+  height: 526px;
 }
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  .card:hover {
-    background: rgba(var(--card-rgb), 0.1);
-    border: 1px solid rgba(var(--card-border-rgb), 0.15);
-  }
-
-  .card:hover span {
-    transform: translateX(4px);
-  }
+.img2 {
+  
+  position: relative;
+  width: 255px;
+  left: 262px;
+  height: 271px;
+  top: -398px;
+}
+.img3 {
+  position: relative;
+  width: 257px;
+  height: 239px;
+  top: -143px;
+  left: 6px;
+}
+.recipe1 {
+  position: relative;
+  bottom: 42rem;
+  width: 22rem;
+  left: 41rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.recipe1 .bt1 {
+  background-color: transparent;
+  border-radius: 50%;
+  width: 77px;
+  border: 2px solid var(--pinky);
+  color: var(--pinky);
+  height: 32px;
+  cursor: pointer;
+  cursor: pointer;
+  transition: background-color .5s ease-out;
+}
+.recipe1 .bt1:hover {
+  background-color: var(--pinky);
+  color: #fff;
+}
+.recipe1 .titolo1 {
+  top: 2rem;
+  width: 80%;
+  font-size: 2rem;
+  font-weight: 100;
+  left: -3rem;
+}
+.recipe1 .titolo1::after {
+  display: none;
+}
+.recipe1 .p1 {
+  display: flex;
+  overflow-wrap: break-word;
+  position: relative;
+  top: 0rem;
+  right: 4rem;
+  text-align: center;
+  margin: 11px 1rem;
+}
+.recipe2 .titolo2 {
+  position: relative;
+  top: 2rem;
+  width: 80%;
+  font-size: 2rem;
+  font-weight: 100;
+  left: 1rem;
+}
+.recipe2 .titolo2::after {
+  display: none;
+}
+.recipe2 {
+  position: relative;
+  bottom: 38rem;
+  flex-wrap: wrap;
+  left: 24rem;
+  display: flex;
+}
+.recipe2 .bt2{
+  background-color: transparent;
+  border-radius: 50%;
+  width: 77px;
+  border: 2px solid var(--pinky);
+  color: var(--pinky);
+  height: 32px;
+  position: relative;
+  left: 17rem;
+  cursor: pointer;
+  transition: background-color .5s ease-out;
 }
 
-@media (prefers-reduced-motion) {
-  .card:hover span {
-    transform: none;
-  }
+.recipe2 .p2 {
+  width: 17rem;
+  position: relative;
+  left: 14rem;
+  top: 1rem;
 }
-
-/* Mobile */
-@media (max-width: 700px) {
-  .content {
-    padding: 4rem;
+.recipe3 .titolo3 {
+  top: 1rem;
+  position: relative;
+  width: 80%;
+  font-size: 2rem;
+  font-weight: 100;
+  left: 11rem;
+}
+.recipe3 .titolo3::after {
+  display: none;
+}
+.recipe3 {
+  position: relative;
+  bottom: 37rem;
+  flex-wrap: wrap;
+  left: -27rem;
+  display: flex;
+}
+.recipe3 .bt3{
+  background-color: transparent;
+  border-radius: 50%;
+  width: 77px;
+  border: 2px solid var(--pinky);
+  color: var(--pinky);
+  height: 32px;
+  position: relative;
+  left: 17rem;
+  cursor: pointer;
+  transition: background-color .5s ease-out;
+}
+.recipe3 .bt3:hover {
+  background-color: var(--pinky);
+  color: #fff;
+}
+.recipe3 .p3 {
+  width: 37rem;
+  position: relative;
+  left: 14rem;
+  top: -1rem;
+}
+.section2 img {
+  width: 22rem;
+  height: 11rem;
+} 
+.section2 .t1 {
+  position: relative;
+  top: -39rem;
+  left: -11rem;
+  width: 274px;
+  font-size: 38px;
+}
+.section2 .t1::after {
+  top: 3rem;
+}
+.section2 .container {
+  height: auto;
+  width: 100%;
+  top: -32rem;
+  position: relative;
+  left: -11rem;
+  display: inline-block;
+}
+.section2 .container .recipe6,.recipe4,.recipe5 {
+  display: inline-block;
+  width: 55%;
+  position: relative;
+  bottom: 7rem;
+}
+.section2 .container .recipe6 .t2{
+color: var(--black);
+  width: 337px;
+  position: relative;
+  left: 0px;
+  top: 0rem;
+  font-size: 21px;
+}
+.section2 .container .recipe6 .t2::after {
+  display: none;
+}
+.section2 .container .recipe6 .p3 {
+  position: relative;
+  bottom: 8px;
+}
+.section2 .container .recipe4 .img5 {
+  position: relative;
+  bottom: 117px;
+}
+.section2 .container .recipe4 {
+  position: relative;
+  bottom: 345px;
+  left: 23rem;
+}
+.section2 .container .recipe4 .t2 {
+  color: var(--black);
+  width: 337px;
+  position: relative;
+  left: 0rem;
+  top: -111px;
+  font-size: 21px;
+}
+.section2 .container .recipe4 .t2::after {
+  display: none;
+}
+.section2 .container .recipe4 .p3 {
+  position: relative;
+  bottom: 119px;
+}
+.section2 .container .recipe5 {
+  position: relative;
+  bottom: 489px;
+  left: 46rem;
+}
+.section2 .container .recipe5 .img6 {
+  position: relative;
+  bottom: 323px;
+}
+.section2 .container .recipe5 .t2 {
+  color: var(--black);
+    width: 337px;
+    position: relative;
+    font-size: 21px;
+    left: 0rem;
+    top: -322px;
+}
+.section2 .container .recipe5 .t2::after {
+  display: none;
+}
+.section2 .container .recipe5 .p3 {
+  position: relative;
+  bottom: 326px;
+}
+/*
+@media(max-width: 375px) {
+  .heading {
+    width: 41%;
+    top: 7rem;
+    left: 4rem;
   }
-
-  .grid {
-    grid-template-columns: 1fr;
-    margin-bottom: 120px;
-    max-width: 320px;
-    text-align: center;
+  .heading::after{
+    margin: 10px;
   }
-
-  .card {
-    padding: 1rem 2.5rem;
+  .img1 {
+    position: relative;
+    top: 117px;
+    width: 11rem;
+    left: -13px;
+    height: 228px;
   }
-
-  .card h2 {
-    margin-bottom: 0.5rem;
+  .img2 {
+    position: relative;
+    width: 6rem;
+    left: -10px;
+    height: 8rem;
+    top: 17px;
   }
-
-  .center {
-    padding: 8rem 0 6rem;
+  .img3 {
+    position: relative;
+        width: 97px;
+        height: 97px;
+        top: 17px;
+        left: 166px;
   }
-
-  .center::before {
-    transform: none;
-    height: 300px;
+  .recipe3 {
+    bottom: 33rem;
+    left: -16rem;
   }
-
-  .description {
-    font-size: 0.8rem;
+  .recipe3 .p3 {
+    width: 16rem;
+    position: relative;
+    left: 254px;
+    top: -1rem;
   }
-
-  .description a {
-    padding: 1rem;
+  .recipe3 .titolo3 {
+    left: 15rem;
   }
-
-  .description p,
-  .description div {
+  .recipe3 .bt3 {
+    top: 1rem;
+  }
+  .recipe1 {
+    position: relative;
+    bottom: -14rem;
+    width: 23rem;
+    left: -2rem;
+    height: 17rem;
     display: flex;
+  }
+  .recipe1 .titolo1 {
+    left: 1rem;
+  }
+  .recipe1 .bt1{
+    position: relative;
+    top: 3rem;
+    right: -4rem;
+  }
+  .recipe1 .p1 {
+    width: 16rem;
+    left: 1rem;
+  }
+  .recipe2 {
+    position: relative;
+    width: 21rem;
+    bottom: -11rem;
+    flex-wrap: wrap;
+    left: 1rem;
+  }
+  .recipe2 .p2 {
+    left: -1rem;
+    width: 16rem;
+  }
+  .recipe2 .titolo2 {
+    left: -1rem;
+  }
+  .recipe2 .bt2 {
+    top: 4rem;
+    left: 1rem;
+  }
+  .section2 {
+    position: relative;
+    top: 40rem;
+  }
+  .section2 .t1{
+    position: relative;
+    top: -42rem;
+    left: -1rem;
+    width: 271px;
+    margin: 1rem;
+    font-size: 40px;
+  }
+  .section2 .container {
+    left: -1rem;
+  }
+  .recipe6 , .recipe4 , .recipe5 {
+    display: inline-block;
+    width: 80%;
+    position: relative;
+    bottom: 7rem;
+    left: 16px;
+}
+  
+.section2 .img4,  .section2 .img5,  .section2 .img6 {
+    width: 280px;
+  }
+.section2 .container .recipe3 .p3 {
+    position: relative;
+    bottom: 8px;
+    width: 17rem;
+    left: 4px;
+  }
+  .section2 .container .recipe4 {
+    position: relative;
+    bottom: -1px;
+    left: 16px;
+    }
+  .section2 .container .recipe4 .p3 {
+    position: relative;
+    width: 17rem;
+    left: 17px;
+  }
+.section2 .container .recipe4 .t2 {
+  left: 1rem;
+  width: 268px;
+}
+.section2 .container .recipe5 {
+    position: relative;
+    bottom: -16rem;
+    left: 1rem;
+  }
+.section2 .container .recipe5 .t2 {
+  left: 1rem;
+  width: 268px;
+}
+  .section2 .container .recipe5 .p3 {
+    position: relative;
+    width: 17rem;
+    left: 10px;
+  }
+.section2 .container .recipe6 .t2 {
+    position: relative;
+    width: 17rem;
+    left: 10px;
+  }
+  .section2 .container .recipe6 .p3 {
+    position: relative;
+    width: 17rem;
+    left: 10px;
+  }
+}
+*/
+
+@media(max-width: 428px) {
+  .heading {
+    left: 6rem;
+    width: 51%;
+    font-size: 2rem;
+  }
+  .img1 {
+    position: relative;
+    top: 132px;
+    width: 14rem;
+    left: -5px;
+    height: 304px;
+  }
+  .img2 {
+    position: relative;
+    width: 10rem;
+    left: 8px;
+    height: 10rem;
+    top: -12px;
+  }
+  .img3 {
+    position: relative;
+    width: 10rem;
+    height: 134px;
+    top: -6px;
+    left: 231px;
+  }
+  .recipe3 {
+    position: relative;
+    left: -14rem;
+    bottom: 29rem;
+  }
+  .recipe3 .bt3 {
+    position: relative;
+    top: -1rem;
+    left: 220px;
+  }
+  .recipe3 .titolo3 {
+    position: relative;
+    top: 1rem;
+    left: 11rem;
+    }
+
+  .recipe3 .p3 {
+    width: 24rem;
+    left: 217px;
+    top: -1rem;
+  }
+  .recipe1 {
+    position: relative;
+    bottom: -13rem;
+    width: 26rem;
+    left: 4rem;
+    height: 18rem;
+    display: flex;
+  }
+  .recipe1 .p1 {
+    position: relative;
+    width: 21rem;
+    left: -4rem;
+  }
+  .recipe1 .titolo1 {
+    position: relative;
+    left: -7rem;
+    top: 4rem;
+  }
+  .recipe1 .bt1{
+    position: relative;
+    top: 1rem;
+    right: 4rem;
+  }
+  .recipe2 {
+    position: relative;
+    width: 26rem;
+    bottom: -10rem;
+    flex-wrap: wrap;
+    left: 2rem;
+  }
+  .recipe2 .p2 {
+    left: -15px;
+    width: 22rem;
+  }
+  .recipe2 .bt2 {
+    top: 1rem;
+    left: -2rem;
+  }
+  .recipe2 .titolo2 {
+    left: -6rem;
+    position: relative;
+  }
+  .section2 {
+    position: relative;
+    top: 44rem;
+  }
+  .section2 .t1{
+    position: relative;
+    top: -42rem;
+    left: -1rem;
+    width: 271px;
+    margin: 1rem;
+    font-size: 40px;
+  }
+  .section2 .container {
+    left: -1rem;
+  }
+  .recipe6 , .recipe4 , .recipe5 {
+    display: inline-block;
+    width: 80%;
+    position: relative;
+    bottom: 7rem;
+}
+.section2 .img4,  .section2 .img5,  .section2 .img6 {
+  width: 24rem;
+  height: 11rem;
+  position: relative;
+  left: 17px;
+  }
+ 
+  .section2 .container .recipe3 .p3 {
+    position: relative;
+    bottom: 8px;
+    width: 17rem;
+    left: 4px;
+  }
+  .section2 .container .recipe4 {
+    position: relative;
+    bottom: -7rem;
+    left: 0rem;
+  }
+ 
+  .section2 .container .recipe4 .t2 {
+    position: relative;
+    width: 24rem;
+    left: 1px;
+  }
+  .section2 .container .recipe4 .p3 {
+    position: relative;
+    width: 20rem;
+    left: 1px;
+  }
+  .section2 .container .recipe5 {
+    position: relative;
+    bottom: -22rem;
+    left: 0rem;
+  }
+  .section2 .container .recipe5 .t2 {
+    position: relative;
+    width: 24rem;
+    left: 1px;
+  }
+  .section2 .container .recipe5 .p3 {
+    position: relative;
+    width: 20rem;
+    left: 1px;
+  }
+  .section2 .container .recipe6 .t2 {
+    position: relative;
+    width: 24rem;
+    left: 1px;
+  }
+  .section2 .container .recipe6 .p3 {
+    position: relative;
+    width: 20rem;
+    left: 1px;
+  }
+
+}
+/*
+@media(min-width: 768px){
+  .heading {
+    width: 41%;
+    top: 8rem;
+    left: 4rem;
+  }
+  .img1 {
+    position: relative;
+    top: 175px;
+    width: 16rem;
+    left: -53px;
+    height: 345px;
+  }
+  .img2 {
+    position: relative;
+        width: 10rem;
+        left: -44px;
+        height: 12rem;
+        top: 23px;
+  }
+  .img3 {
+    position: relative;
+    width: 10rem;
+    height: 144px;
+    top: 175px;
+    left: -204px;
+  }
+  .recipe3 {
+    position: relative;
+    top: -19rem;
+    left: -15rem;
+  }
+  .recipe3 .titolo3 {
+    left: 5rem;
+  }
+  .recipe3 .bt3 , .recipe1 .bt1 , .recipe2 .bt2{
+    width: 84px;
+    height: 40px;
+  }
+  .recipe3 .p3 {
+   left: 11rem;
+    top: -1rem;
+  }
+  .recipe1 .p1 , .recipe2 .p2 , .recipe3 .p3 {
+    width: 27rem;
+    position: relative;
+    left: 182px;
+  }
+  .recipe1 {
+    bottom: -23rem;
+    left: 2rem;
+    height: 17rem;
+  }
+  .recipe1 .titolo1 {
+    left: -1rem;
+  }
+  .recipe1 .p1 {
+    left: -5rem;
+    top: 1rem;
+  }
+  .recipe1 .bt1{
+    position: relative;
+    top: 3rem;
+    right: 3rem;
+  }
+  .recipe2 {
+    position: relative;
+    bottom: -23rem;
+    flex-wrap: wrap;
+    left: -3rem;
+  }
+  .recipe2 .titolo2 {
+    top: 3rem;
+    width: 80%;
+    font-size: 2rem;
+    font-weight: 100;
+    left: 3rem;
+  }
+  .recipe2 .p2 {
+    left: 0rem;
+  }
+  .recipe2 .bt2 {
+    top: 1rem;
+        left: 2rem;
+  }
+  .section2 {
+    position: relative;
+    top: 56rem;
+  }
+  .section2 .t1{
+    position: relative;
+    top: -40rem;
+    left: -1rem;
+    width: 271px;
+    margin: 1rem;
+    font-size: 40px;
+  }
+  .section2 .container {
+    left: 8rem;
+    top: -30rem;
+  }
+  .section2 .container {
+    width: 28rem;
+    height: 12rem;
+  }
+  .section2 .container .recipe6 {
+    display: inline-block;
+    width: 75%;
+    position: relative;
+    left: -10rem;
+  }
+  .section2 .container .recipe4 {
+    display: inline-block;
+        width: 75%;
+        left: -10rem;
+        position: relative;
+        bottom: -12px;
+  }
+   .section2 .container .recipe5 {
+    display: inline-block;
+    width: 75%;
+    position: relative;
+    left: -10rem;
+    bottom: -15rem;
+   }
+ .recipe6 .img4 , .recipe4 .img5 , .recipe5 .img6 {
+    width: 22rem;
+    position: relative;
+    left: 1rem;
+  }
+  .section2 .container .recipe3 .p3 {
+    position: relative;
+    bottom: 8px;
+    width: 17rem;
+  }
+  .section2 .container .recipe4 .p3 {
+    position: relative;
+    width: 17rem;
+    left: 4px;
+  }
+
+  .section2 .container .recipe5 .p3 {
+    position: relative;
+    width: 17rem;
+  }
+}
+@media(min-width: 1144px){
+  .section1 {
+    position: relative;
+    text-align: center;
+    left: 5rem;
+    display: contents;
     justify-content: center;
-    position: fixed;
-    width: 100%;
-  }
-
-  .description p {
+    top: 1rem;
     align-items: center;
-    inset: 0 0 auto;
-    padding: 2rem 1rem 1.4rem;
-    border-radius: 0;
-    border: none;
-    border-bottom: 1px solid rgba(var(--callout-border-rgb), 0.25);
-    background: linear-gradient(
-      to bottom,
-      rgba(var(--background-start-rgb), 1),
-      rgba(var(--callout-rgb), 0.5)
-    );
-    background-clip: padding-box;
-    backdrop-filter: blur(24px);
+  }
+  .heading {
+    width: 38%;
+    top: 6rem;
+    left: 15rem;
+  }
+  .heading::after {
+    height: 2px;
+    width: 86%;
+    left: 1rem;
+    top: 2rem;
+  }
+  .img1 {
+    position: relative;
+    top: 151px;
+    width: 27rem;
+    left: -11rem;
+    height: 526px;
+  }
+  .img2 {
+    position: relative;
+    width: 255px;
+    left: 262px;
+    height: 264px;
+    top: -378px;
+  }
+  .img3 {
+    position: relative;
+    width: 257px;
+    height: 256px;
+    top: -117px;
+    left: 6px;
+  }
+  .recipe1 {
+    position: relative;
+    bottom: 42rem;
+    width: 22rem;
+    left: 37rem;
+  }
+  .recipe1 .bt1 {
+    width: 77px;
+    height: 32px;
+  }
+  .recipe1 .titolo1 {
+    top: 2rem;
+    width: 80%;
+    left: -3rem;
+    position: relative;
   }
 
-  .description div {
-    align-items: flex-end;
-    pointer-events: none;
-    inset: auto 0 0;
-    padding: 2rem;
-    height: 200px;
-    background: linear-gradient(
-      to bottom,
-      transparent 0%,
-      rgb(var(--background-end-rgb)) 40%
-    );
-    z-index: 1;
+  .recipe1 .p1 {
+    position: relative;
+    top: 0rem;
+    right: 4rem;
+    width: 17rem;
+  }
+  .recipe2 .titolo2 {
+    top: 0rem;
+    position: relative;
+    width: 80%;
+    left: -4rem;
+  }
+  .recipe2 {
+    bottom: 40rem;
+    left: 34rem;
+    position: relative;
+  }
+  .recipe2 .bt2{
+    position: relative;
+    width: 77px;
+    height: 32px;
+    top: -1rem;
+    left: 1rem;
+  }
+  .recipe2 .p2 {
+    position: relative;
+    top: -1rem;
+    right: 4rem;
+    width: 17rem;
+  }
+  .recipe3 .titolo3 {
+    top: 2rem;
+    width: 80%;
+    left: -3rem;
+  }
+  .recipe3 {
+    position: relative;
+   top: -36rem;
+    flex-wrap: wrap;
+    left: -27rem;
+    display: flex;
+  }
+  .recipe3 .bt3{
+    width: 77px;
+    height: 32px;
+  }
+  .recipe3 .p3 {
+    top: -2rem;
+    position: relative;
+    right: 4rem;
+    width: 32rem;
+  }
+  .section2 img {
+    width: 22rem;
+    height: 11rem;
+  } 
+  .section2 .t1 {
+    position: relative;
+    top: -39rem;
+    left: -11rem;
+    width: 274px;
+    font-size: 38px;
+  }
+  .section2 .t1::after {
+    top: 3rem;
+  }
+  .section2 .container {
+    height: auto;
+    width: 100%;
+    top: -32rem;
+    position: relative;
+    left: -11rem;
+    display: inline-block;
+  }
+  .section2 .container .recipe6,.recipe4,.recipe5 {
+    display: inline-block;
+    width: 55%;
+    position: relative;
+    bottom: 7rem;
+  }
+  .section2 .container .recipe6 .t2{
+  color: var(--black);
+    width: 337px;
+    position: relative;
+    left: 0px;
+    top: 0rem;
+    font-size: 21px;
+  }
+  .section2 .container .recipe6 .t2::after {
+    display: none;
+  }
+  .section2 .container .recipe6 .p3 {
+    position: relative;
+    bottom: 8px;
+  }
+  .section2 .container .recipe4 .img5 {
+    position: relative;
+    bottom: 117px;
+  }
+  .section2 .container .recipe4 {
+    position: relative;
+    bottom: 345px;
+    left: 23rem;
+  }
+  .section2 .container .recipe4 .t2 {
+    color: var(--black);
+    width: 337px;
+    position: relative;
+    left: 0rem;
+    top: -111px;
+    font-size: 21px;
+  }
+  .section2 .container .recipe4 .t2::after {
+    display: none;
+  }
+  .section2 .container .recipe4 .p3 {
+    position: relative;
+    bottom: 119px;
+  }
+  .section2 .container .recipe5 {
+    position: relative;
+    bottom: 489px;
+    left: 46rem;
+  }
+  .section2 .container .recipe5 .img6 {
+    position: relative;
+    bottom: 323px;
+  }
+  .section2 .container .recipe5 .t2 {
+    color: var(--black);
+      width: 337px;
+      position: relative;
+      font-size: 21px;
+      left: 0rem;
+      top: -322px;
+  }
+  .section2 .container .recipe5 .t2::after {
+    display: none;
+  }
+  .section2 .container .recipe5 .p3 {
+    position: relative;
+    bottom: 326px;
   }
 }
+/*@media(min-width: 1144px){
+  .section1 {
+    position: relative;
+    text-align: center;
+    left: 5rem;
+    display: contents;
+    justify-content: center;
+    top: 1rem;
+    align-items: center;
+  }
+  .heading {
+    width: 38%;
+    top: 6rem;
+    left: 15rem;
+  }
+  .heading::after {
+    height: 2px;
+    width: 86%;
+    left: 1rem;
+    top: 2rem;
+  }
+  .img1 {
+    position: relative;
+    top: 151px;
+    width: 27rem;
+    left: -11rem;
+    height: 526px;
+  }
+  .img2 {
+    position: relative;
+    width: 255px;
+    left: 262px;
+    height: 264px;
+    top: -378px;
+  }
+  .img3 {
+    position: relative;
+    width: 257px;
+    height: 256px;
+    top: -117px;
+    left: 6px;
+  }
+  .recipe1 {
+    position: relative;
+    bottom: 42rem;
+    width: 22rem;
+    left: 37rem;
+  }
+  .recipe1 .bt1 {
+    width: 77px;
+    height: 32px;
+  }
+  .recipe1 .titolo1 {
+    top: 2rem;
+    width: 80%;
+    left: -3rem;
+    position: relative;
+  }
 
-/* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
-  .grid {
-    grid-template-columns: repeat(2, 50%);
+  .recipe1 .p1 {
+    position: relative;
+    top: 0rem;
+    right: 4rem;
+    width: 17rem;
   }
-}
-
-@media (prefers-color-scheme: dark) {
-  .vercelLogo {
-    filter: invert(1);
+  .recipe2 .titolo2 {
+    top: 0rem;
+    position: relative;
+    width: 80%;
+    left: -4rem;
   }
-
-  .logo {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
+  .recipe2 {
+    bottom: 40rem;
+    left: 34rem;
+    position: relative;
   }
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(360deg);
+  .recipe2 .bt2{
+    position: relative;
+    width: 77px;
+    height: 32px;
+    top: -1rem;
+    left: 1rem;
   }
-  to {
-    transform: rotate(0deg);
+  .recipe2 .p2 {
+    position: relative;
+    top: -1rem;
+    right: 4rem;
+    width: 17rem;
   }
-}
+  .recipe3 .titolo3 {
+    top: 2rem;
+    width: 80%;
+    left: -3rem;
+  }
+  .recipe3 {
+    position: relative;
+   top: -36rem;
+    flex-wrap: wrap;
+    left: -27rem;
+    display: flex;
+  }
+  .recipe3 .bt3{
+    width: 77px;
+    height: 32px;
+  }
+  .recipe3 .p3 {
+    top: -2rem;
+    position: relative;
+    right: 4rem;
+    width: 32rem;
+  }
+  .section2 img {
+    width: 22rem;
+    height: 11rem;
+  } 
+  .section2 .t1 {
+    position: relative;
+    top: -39rem;
+    left: -11rem;
+    width: 274px;
+    font-size: 38px;
+  }
+  .section2 .t1::after {
+    top: 3rem;
+  }
+  .section2 .container {
+    height: auto;
+    width: 100%;
+    top: -32rem;
+    position: relative;
+    left: -11rem;
+    display: inline-block;
+  }
+  .section2 .container .recipe6,.recipe4,.recipe5 {
+    display: inline-block;
+    width: 55%;
+    position: relative;
+    bottom: 7rem;
+  }
+  .section2 .container .recipe6 .t2{
+  color: var(--black);
+    width: 337px;
+    position: relative;
+    left: 0px;
+    top: 0rem;
+    font-size: 21px;
+  }
+  .section2 .container .recipe6 .t2::after {
+    display: none;
+  }
+  .section2 .container .recipe6 .p3 {
+    position: relative;
+    bottom: 8px;
+  }
+  .section2 .container .recipe4 .img5 {
+    position: relative;
+    bottom: 117px;
+  }
+  .section2 .container .recipe4 {
+    position: relative;
+    bottom: 345px;
+    left: 23rem;
+  }
+  .section2 .container .recipe4 .t2 {
+    color: var(--black);
+    width: 337px;
+    position: relative;
+    left: 0rem;
+    top: -111px;
+    font-size: 21px;
+  }
+  .section2 .container .recipe4 .t2::after {
+    display: none;
+  }
+  .section2 .container .recipe4 .p3 {
+    position: relative;
+    bottom: 119px;
+  }
+  .section2 .container .recipe5 {
+    position: relative;
+    bottom: 489px;
+    left: 46rem;
+  }
+  .section2 .container .recipe5 .img6 {
+    position: relative;
+    bottom: 323px;
+  }
+  .section2 .container .recipe5 .t2 {
+    color: var(--black);
+      width: 337px;
+      position: relative;
+      font-size: 21px;
+      left: 0rem;
+      top: -322px;
+  }
+  .section2 .container .recipe5 .t2::after {
+    display: none;
+  }
+  .section2 .container .recipe5 .p3 {
+    position: relative;
+    bottom: 326px;
+  }
+}*/
