@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import Styles from "./Shop.module.css";
-import "../../app/page.module.css";
+//import "../../app/page.module.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
@@ -11,11 +11,11 @@ type AdditionalBreadBlockProps = {
 }
 const AdditionalBreadBlocks: React.FC<AdditionalBreadBlockProps> = ( {handleClickC} ) => {
     const breadblocks = [
-        { id: 1, title: 'block1', price: '$10', img: '/images/bre1.jpg', width: 100, height: 100  },
-        { id: 2, title: 'block2', price: '$10', img: '/images/bre2.jpg' , width: 100, height: 100 },
-        { id: 3, title: 'block3', price: '$10', img: '/images/bre3.jpg' , width: 100, height: 100 },
-        { id: 4, title: 'block4', price: '$10', img: '/images/bre4.jpg' , width: 100, height: 100 },
-        { id: 5, title: 'block5', price: '$10', img: '/images/bre5.jpg' , width: 100, height: 100 }
+        { id: 1, title: 'bread', price: '$10', img: '/images/bre1.jpg', width: 100, height: 100  },
+        { id: 2, title: 'bread', price: '$10', img: '/images/bre2.jpg' , width: 100, height: 100 },
+        { id: 3, title: 'bread', price: '$10', img: '/images/bre3.jpg' , width: 100, height: 100 },
+        { id: 4, title: 'bread', price: '$10', img: '/images/bre4.jpg' , width: 100, height: 100 },
+        { id: 5, title: 'bread', price: '$10', img: '/images/bre5.jpg' , width: 100, height: 100 }
     ];
     return (
         <ul className={Styles.showAdditionalListb}>
@@ -32,11 +32,11 @@ const AdditionalBreadBlocks: React.FC<AdditionalBreadBlockProps> = ( {handleClic
     )};
 const AdditionalCroissantBlocks: React.FC<AdditionalBreadBlockProps>  = ({handleClickC}) => {
     const croissantblocks = [
-        { id: 1, title: 'block1', price: '$10', img: '/images/croi1.jpg' , width: 100, height: 100  },
-        { id: 2, title: 'block2', price: '$10', img: '/images/croi2.jpg' , width: 100, height: 100  },
-        { id: 3, title: 'block3', price: '$10', img: '/images/croi3.jpg' , width: 100, height: 100  },
-        { id: 4, title: 'block4', price: '$10', img: '/images/croi4.jpg' , width: 100, height: 100  },
-        { id: 5, title: 'block5', price: '$10', img: '/images/croi5.jpg' , width: 100, height: 100  }
+        { id: 1, title: 'croissant', price: '$10', img: '/images/croi1.jpg' , width: 100, height: 100  },
+        { id: 2, title: 'croissant', price: '$10', img: '/images/croi2.jpg' , width: 100, height: 100  },
+        { id: 3, title: 'croissant', price: '$10', img: '/images/croi3.jpg' , width: 100, height: 100  },
+        { id: 4, title: 'croissant', price: '$10', img: '/images/croi4.jpg' , width: 100, height: 100  },
+        { id: 5, title: 'croissant', price: '$10', img: '/images/croi5.jpg' , width: 100, height: 100  }
     ];
     return (
         <ul className={Styles.showAdditionalListc}>
@@ -53,11 +53,11 @@ const AdditionalCroissantBlocks: React.FC<AdditionalBreadBlockProps>  = ({handle
     )};
 const AdditionalMuffinBlocks: React.FC<AdditionalBreadBlockProps>  = ({handleClickC}) => {
     const muffinblocks = [
-        { id: 1, title: 'block1', price: '$10', img: '/images/muf1.jpg', width: 100, height: 100  },
-        { id: 2, title: 'block2', price: '$10', img: '/images/muf2.jpg', width: 100, height: 100  },
-        { id: 3, title: 'block3', price: '$10', img: '/images/muf3.jpg', width: 100, height: 100  },
-        { id: 4, title: 'block4', price: '$10', img: '/images/muf4.jpg', width: 100, height: 100  },
-        { id: 5, title: 'block5', price: '$10', img: '/images/muf5.jpg', width: 100, height: 100  }
+        { id: 1, title: 'muffin', price: '$10', img: '/images/muf1.jpg', width: 100, height: 100  },
+        { id: 2, title: 'muffin', price: '$10', img: '/images/muf2.jpg', width: 100, height: 100  },
+        { id: 3, title: 'muffin', price: '$10', img: '/images/muf3.jpg', width: 100, height: 100  },
+        { id: 4, title: 'muffin', price: '$10', img: '/images/muf4.jpg', width: 100, height: 100  },
+        { id: 5, title: 'muffin', price: '$10', img: '/images/muf5.jpg', width: 100, height: 100  }
     ];
     return (
         <ul className={Styles.showAdditionalListm}>
@@ -77,27 +77,27 @@ const Shop = () => {
     const [redirectIndex, setRedirectIndex] = useState<number | null>(null);
 
     const breadblocks = [
-        { id: 1, title: 'block1', price: '$10', img: '/images/bre1.jpg' },
-        { id: 2, title: 'block2', price: '$10', img: '/images/bre2.jpg' },
-        { id: 3, title: 'block3', price: '$10', img: '/images/bre3.jpg' },
-        { id: 4, title: 'block4', price: '$10', img: '/images/bre4.jpg' },
-        { id: 5, title: 'block5', price: '$10', img: '/images/bre5.jpg' }
+        { id: 1, title: 'bread', price: '$10', img: '/images/bre1.jpg' },
+        { id: 2, title: 'bread', price: '$10', img: '/images/bre2.jpg' },
+        { id: 3, title: 'bread', price: '$10', img: '/images/bre3.jpg' },
+        { id: 4, title: 'bread', price: '$10', img: '/images/bre4.jpg' },
+        { id: 5, title: 'bread', price: '$10', img: '/images/bre5.jpg' }
     ];
 
     const croissantblocks = [
-        { id: 1, title: 'block1', price: '$10', img: '/images/croi1.jpg' },
-        { id: 2, title: 'block2', price: '$10', img: '/images/croi2.jpg' },
-        { id: 3, title: 'block3', price: '$10', img: '/images/croi3.jpg' },
-        { id: 4, title: 'block4', price: '$10', img: '/images/croi4.jpg' },
-        { id: 5, title: 'block5', price: '$10', img: '/images/croi5.jpg' }
+        { id: 1, title: 'croissant', price: '$10', img: '/images/croi1.jpg' },
+        { id: 2, title: 'croissant', price: '$10', img: '/images/croi2.jpg' },
+        { id: 3, title: 'croissant', price: '$10', img: '/images/croi3.jpg' },
+        { id: 4, title: 'croissant', price: '$10', img: '/images/croi4.jpg' },
+        { id: 5, title: 'croissant', price: '$10', img: '/images/croi5.jpg' }
     ];
 
     const muffinblocks = [
-        { id: 1, title: 'block1', price: '$10', img: '/images/muf1.jpg' },
-        { id: 2, title: 'block2', price: '$10', img: '/images/muf2.jpg' },
-        { id: 3, title: 'block3', price: '$10', img: '/images/muf3.jpg' },
-        { id: 4, title: 'block4', price: '$10', img: '/images/muf4.jpg' },
-        { id: 5, title: 'block5', price: '$10', img: '/images/muf5.jpg' }
+        { id: 1, title: 'muffin', price: '$10', img: '/images/muf1.jpg' },
+        { id: 2, title: 'muffin', price: '$10', img: '/images/muf2.jpg' },
+        { id: 3, title: 'muffin', price: '$10', img: '/images/muf3.jpg' },
+        { id: 4, title: 'muffin', price: '$10', img: '/images/muf4.jpg' },
+        { id: 5, title: 'muffin', price: '$10', img: '/images/muf5.jpg' }
     ];
 
     const handleClickC = (index: number, blockId: string, category: string, title: string) => {

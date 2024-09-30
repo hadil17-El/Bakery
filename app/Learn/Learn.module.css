@@ -44,7 +44,7 @@
     width: 7rem;
     max-width: 10rem;
     height: 8rem;
-    left: 982px;
+    left: 987px;
     border-bottom-right-radius: 4rem;
     border-top-left-radius: 4rem;
     position: relative;
@@ -90,6 +90,11 @@
     height: 15rem;
     width: 13rem;
     border-radius: 8px;
+}
+.ingredientItem {
+    position: relative;
+    left: 0rem;
+    font-size: 1rem;
 }
 .nutritionalInfo {
     left: 27rem;
@@ -138,14 +143,14 @@
     height: 16rem;
 }
 .bread .img2 {
-    bottom: 132px;
+   bottom: 132px;
 }
 .bread .img3 {
     bottom: 121px;
-    left: 982px;
+    left: 987px;
 }
 .bread .img4 {
-    bottom: 287px;
+    bottom: 284px;
     left: 54rem;
 }
 .croissant {
@@ -191,12 +196,12 @@
     top: 11rem;
 }
 .muffin .img1 {
-    left: 64rem;
+   left: 1032px;
     position: relative;
     top: 6rem;
 }
 .muffin .img2 {
-    left: 905px;
+    left: 909px;
     position: relative;
     top: -4rem;
 }
@@ -206,9 +211,9 @@
     top: -23rem;
 }
 .muffin .img4 {
-    left: 1028px;
+       left: 1031px;
     position: relative;
-    top: -32rem;
+    top: -501px;
 }
 .muffin .ul1 {
     bottom: -1rem;

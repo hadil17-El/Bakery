@@ -2,7 +2,6 @@
 
 import React, { useEffect } from 'react';
 import styles from './Learn.module.css';
-import "../../app/page.module.css";
 import Image from 'next/image';
 import 'aos/dist/aos.css';
 import AOS from 'aos';

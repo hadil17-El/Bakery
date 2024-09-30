@@ -2,8 +2,13 @@
 import React, {useState, useEffect} from 'react';
 import  styles from './footer.module.css';
 import Image from 'next/image';
-
+import AOS from 'aos';
 export default function Footer() {
+    useEffect(() => {
+        AOS.init({
+            duration: 500,
+        });
+    },[]);
     const [imageIndex, setImageIndx] = useState(0);
     const images = ['/images/img1.jpg','/images/img2.jpg','/images/img3.jpg',
     '/images/img4.jpg','/images/img5.jpg','/images/img6.jpg'
@@ -18,7 +23,7 @@ export default function Footer() {
     },[]);
     return(<>
             <footer className={styles.footer}>
-                <div className={styles.iconContainer}>
+                <div className={styles.iconContainer} data-aos="fade-left">
                     <a href="#">  <span className={styles.iconTitolo}>
                         Cancel Anytime
                     </span>
@@ -44,7 +49,7 @@ export default function Footer() {
                    
 
                 </div>
-                <div className={styles.imageContainer}>
+                <div className={styles.imageContainer} data-aos="fade-right">
                     <Image src= {images[imageIndex]} alt="Footer Image" width={100} height= {100} />
 
                 </div>

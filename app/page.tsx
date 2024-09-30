@@ -1,5 +1,6 @@
 "use client";
 import styles from "./page.module.css";
+import './globals.css';
 import Footer from "./components/Footer";
 import 'aos/dist/aos.css';
 import Image from "next/image";

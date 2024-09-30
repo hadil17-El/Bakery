@@ -90,7 +90,7 @@ export default function CreateAccount() {
                 ))}
                 </select>
               </label>              
-                <button className={styles.btn} type="submit" >Create Account</button>
+                <button className={styles.btn} type="submit" >Created</button>
                 <button className={styles.btn2} type="button" onClick={handleAccount}>Back</button>
             </form>
             </section>
